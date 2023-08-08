@@ -1629,6 +1629,11 @@ width: 264px;
     display: block;
 }
 
+.menu-open-btn {
+border: none;
+background-color: none;
+}
+
 .mob-address-list-item:not(:last-child) {
     margin-bottom: 40px;
 }
