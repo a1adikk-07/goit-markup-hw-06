@@ -324,7 +324,6 @@ button {
 
 .hero {
     padding: 188px 0;
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-repeat: no-repeat;
@@ -332,14 +331,14 @@ button {
     background-size: cover;
 
     background-color: var(--logo-dark);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(./images/hero.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tel.jpg);
 }
 
 @media(min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 (min-resolution:2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\(1\)-pk.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tel.jpg);
     }
 }
 
@@ -353,7 +352,7 @@ button {
     (min-resolution:192dpi),
     (min-resolution:2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg\(1\)-tabl.jpg);
         }
     }
 }
@@ -513,9 +512,6 @@ button {
     }
 }
 
-
-
-
 .descrep {
     color: var(--logo-dark);
     font-weight: 700;
@@ -528,7 +524,7 @@ button {
     margin-bottom: 8px;
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (min-width: 428px) {
 
 .descli {
     padding-top: 72px;
@@ -632,14 +628,15 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-/* @media only screen and (min-width: 428px) {
-    .fon-title{
-     width: calc((100% - 1*24px) /1); 
+ @media only screen and (min-width: 428px) {
+    .fon-title {
+        margin-bottom: 76px;
     }
-  } */
+  } 
 @media only screen and (min-width: 768px) {
     .fon-title {
         width: calc((100% - 24px) / 2);
+        margin-bottom: 40px;
     }
 }
 
@@ -718,7 +715,7 @@ button {
 /* ---Section 5 (4)--- */
 @media only screen and (min-width: 428px) {
     .customers {
-        padding-top: 96px;
+        padding: 96px 0;
 
     }
 }
@@ -741,7 +738,6 @@ button {
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 16px;
-        padding-bottom: 72px;
     }
 }
 
@@ -807,7 +803,6 @@ button {
 .footer-style {
     background-color: var(--logo-dark);
     /* height: 314px; */
-    height: 664px;
     padding: 96px 0;
     /* padding: 100px 0; */
 }
@@ -819,7 +814,6 @@ button {
 
 .logo-footer-text {
     /* margin-right: 120px; */
-    padding-bottom: 72px;
     margin: 0 64px;
     display: flex;
     flex-direction: column;
@@ -859,7 +853,7 @@ button {
     align-items: center;
     gap: 16px;
 
-    padding-bottom: 72px;
+    margin: 72px 0;
 
 
 }
@@ -926,17 +920,15 @@ button {
     }
 
     .footer-style-item {
-
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 72px 24px;
+                gap: 72px 24px;
     }
 
     .logo-footer-text {
         max-width: 264px;
         padding-bottom: 0;
-        margin-left: 92px;
         margin-right: 0;
 
     }
@@ -954,7 +946,8 @@ button {
     }
 
     .form-input {
-        margin-left: 80px;
+        width: 100%;
+        margin-left: 60px;
     }
 
     .e-mail-form {
