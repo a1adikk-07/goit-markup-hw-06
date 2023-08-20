@@ -444,6 +444,10 @@ button {
 
 }
 
+.bottom {
+    padding: auto;
+}
+
 @media only screen and (min-width: 768px) {
     .content-elem {
         max-width: 552px;
