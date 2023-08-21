@@ -1688,8 +1688,9 @@ button {
     align-items: center;
     justify-items: center;
     margin-top: auto;
-    /*margin-left: 0;*/
-
+    margin-left: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 .mob-nav-item-tel {
