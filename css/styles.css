@@ -151,6 +151,7 @@ button {
     line-height: 1.5;
     letter-spacing: 2%;
     color: var(--logo-dark);
+    gap: 40px;
 }
 
 .link {
@@ -225,9 +226,11 @@ button {
 
 @media only screen and (min-width:1158px) {
 
-.header-nav-list {
-    gap: 80px;
+.menu {
+    width: calc((100% - 80px) / 3);
+    gap: 40px;
 }
+
 
     .header-nav-cont {
         margin-left: auto;
@@ -355,14 +358,14 @@ button {
 @media only screen and (min-width: 768px) {
     .hero {
         padding: 112px 0;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tabl.jpg);
     }
 
     @media(min-device-pixel-ratio:2),
     (min-resolution:192dpi),
     (min-resolution:2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg\(1\)-tabl.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tabl.jpg);
         }
     }
 }
@@ -376,7 +379,7 @@ button {
     (min-resolution:192dpi),
     (min-resolution:2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero2x.jpg);
         }
     }
 }
@@ -406,6 +409,9 @@ button {
 }
 
 @media only screen and (min-width: 1158px) {
+    .hero {
+        padding: 168px 0;
+    }
     .hero-title {
         margin-bottom: 48px;
     }
@@ -641,7 +647,6 @@ button {
 
  @media only screen and (min-width: 428px) {
     .fon-title {
-        margin-bottom: 76px;
     }
   } 
 @media only screen and (min-width: 768px) {
@@ -650,6 +655,10 @@ button {
 }
 
 @media only screen and (min-width: 1158px) {
+
+.team-div-container {
+    max-width: 1158px;
+}
     .fon-title {
         width: calc((100% - 72px) / 4);
     }
@@ -905,8 +914,8 @@ button {
     fill: var(--text-footer);
 }
 
-.social-link-ft:hover,
-.social-link-ft:focus {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--sociai-link-ftr);
 }
 
@@ -961,7 +970,6 @@ button {
     }
 
     .mail-form {
-        max-width: 264px;
 
     }
 
@@ -981,6 +989,7 @@ button {
         display: flex;
         align-items: baseline;
         flex-wrap: nowrap;
+        max-width: 1158px;
         gap: 0;
 
     }
@@ -1000,7 +1009,7 @@ button {
     }
 
     .mail-form {
-        width: 264px;
+        max-width: 264px;
     }
 
     .form-input {
