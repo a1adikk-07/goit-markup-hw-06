@@ -202,6 +202,10 @@ button {
     .header {
         height: 72px;
     }
+
+                .header-nav-cont {
+                    margin-left: auto;
+                }
 }
 
 .header-container {
@@ -217,8 +221,8 @@ button {
 .header-contact {
     display: flex;
     flex-direction: column;
-    margin-bottom: 12px;
-    margin-left: 122px;
+   /* margin-bottom: 12px;
+    margin-left: 122px;*/
     gap: inherit;
 
 }
@@ -231,7 +235,6 @@ button {
 
 
     .header-nav-cont {
-        margin-left: auto;
         margin-left: auto;
     }
 
@@ -258,6 +261,11 @@ button {
     .contacts {
         gap: 12px;
     }
+    .contact-link {
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
 
     .header-nav-item {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -305,8 +313,8 @@ button {
     }
 
     .contact-link {
-        font-weight: 400;
-        font-size: 16px;
+       /* font-weight: 400;
+        font-size: 16px;*/
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--color-text);
@@ -314,12 +322,20 @@ button {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1158px) {
+        .contact-link {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+   /* @media only screen and (min-width: 768px) {
         .contact-link {
             font-size: 12px;
             font-weight: 400;
         }
-    }
+    }*/
+
 
     .contact-link:hover {
         color: var(--activ-btn-link);
@@ -328,7 +344,7 @@ button {
     .contact-link:focus {
         color: var(--activ-btn-link);
     }
-}
+
 
 /* -- Section 1 hero -- */
 
@@ -869,7 +885,6 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer);
-    max-width: 264px;
     margin-bottom: 0;
 
 }
@@ -880,10 +895,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 16px;
-
     margin: 72px 0;
-
-
 }
 
 .footer-text-ft {
@@ -932,6 +944,7 @@ button {
     background-color: var(--sociai-link-ftr);
 }
 
+
 @media only screen and (min-width: 768px) {
     .logo-footer {
         margin-right: auto;
@@ -947,9 +960,13 @@ button {
      height: 456px; */
     }
 
+.footer-text {
+            min-width: 268px;
+}
+
     .footer-style-item {
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         flex-wrap: wrap;
         max-width: 584px;
         gap: 72px 24px;
@@ -959,11 +976,9 @@ button {
         max-width: 264px;
         padding-bottom: 0;
         margin-right: 0;
-
     }
 
     .footer-soc-media {
-        margin: auto;
         margin-left: 24px;
         display: inline-block;
 
@@ -974,16 +989,9 @@ button {
         display: inline-block;
     }
 
-    .form-input {
-        width: 100%;
-    }
 
     .e-mail-form {
         display: flex;
-    }
-
-    .mail-form {
-
     }
 
     .e-mail-btn {
@@ -994,7 +1002,6 @@ button {
 
 @media only screen and (min-width: 1158px) {
     .footer-style {
-        height: 314px;
         padding: 100px 0;
     }
 
@@ -1003,8 +1010,6 @@ button {
         align-items: baseline;
         flex-wrap: nowrap;
         max-width: 1158px;
-        gap: 0;
-
     }
 
     .logo-footer-text {
@@ -1018,7 +1023,6 @@ button {
 
     .footer-soc-media {
         margin-right: 80px;
-        margin-left: 0;
     }
 
     .mail-form {
@@ -1056,7 +1060,11 @@ button {
 
 @media only screen and (min-width: 768px) {
     .text-input {
-        text-align: initial;    }
+        text-align: initial;
+        }
+    .mail-form {
+        max-width: 264px;
+        }
 }
 
 .e-mail_name {
@@ -1113,7 +1121,6 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
     color: var(--color-white);
     background-color: var(--logo-lite);
     border: none;
@@ -1634,7 +1641,6 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     align-items: center;
-
 }
 
 .mob-nav-link::after {
@@ -1681,8 +1687,9 @@ button {
     display: flex;
     align-items: center;
     justify-items: center;
-    margin-left: 0;
-    margin-bottom: 48px;
+    margin-top: auto;
+    /*margin-left: 0;*/
+
 }
 
 .mob-nav-item-tel {
@@ -1730,4 +1737,26 @@ button {
     justify-content: center;
     align-items: center;
     gap: 56px;
+    margin-top: 48px;
+}
+
+@media only screen and (max-width: 400px) {
+    .mob-social-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 26px;
+        }
+}
+
+@media only screen and (max-width: 400px) {
+    .mob-menu {
+        padding-top: 80px;
+        padding-right: 35px;
+        padding-left: 40px;
+    }
+    .mob-contact-link {
+        font-size: 24px;
+        font-weight: 800;
+    }
 }
