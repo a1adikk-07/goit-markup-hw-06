@@ -341,7 +341,13 @@ button {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tel.jpg);
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
+    .hero {
+        padding: 112px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
     .hero {
         padding: 112px 0;
     }
@@ -542,7 +548,7 @@ button {
     margin-bottom: 8px;
 }
 
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
 
 .descli {
 }
@@ -645,7 +651,7 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
- @media only screen and (min-width: 428px) {
+ @media only screen and (min-width: 320px) {
     .fon-title {
     }
   } 
@@ -731,12 +737,12 @@ button {
 }
 
 /* ---Section 5 (4)--- */
-@media only screen and (min-width: 428px) {
+@media only screen and (min-width: 320px) {
     .customers {
         padding: 96px 0;
-
     }
 }
+
 
 @media only screen and (min-width: 1158px) {
     .customers {
