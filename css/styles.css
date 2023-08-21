@@ -207,7 +207,6 @@ button {
 .header-container {
     display: flex;
     align-items: center;
-    margin: 0;
 }
 
 .header-nav {
@@ -227,21 +226,19 @@ button {
 @media only screen and (min-width:1158px) {
 
 .menu {
-    width: calc((100% - 80px) / 3);
     gap: 40px;
 }
 
 
     .header-nav-cont {
         margin-left: auto;
+        margin-left: auto;
     }
 
     .header-contact {
         display: flex;
         flex-direction: inherit;
-        margin-bottom: 0;
         margin: auto;
-        padding-left: 0;
         gap: 40px;
     }
 
@@ -254,18 +251,17 @@ button {
 @media only screen and (min-width:768px) {
 
     .header-nav-list {
-
         display: flex;
         align-items: center;
-        gap: 12px;
+    }
 
+    .contacts {
+        gap: 12px;
     }
 
     .header-nav-item {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-
 
     .header-nav-link {
         position: relative;
@@ -318,6 +314,13 @@ button {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
+    @media only screen and (min-width: 768px) {
+        .contact-link {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
     .contact-link:hover {
         color: var(--activ-btn-link);
     }
@@ -357,7 +360,7 @@ button {
 (min-resolution:192dpi),
 (min-resolution:2dppx) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-tel.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-mob-2x.jpg);
     }
 }
 
@@ -371,7 +374,7 @@ button {
     (min-resolution:192dpi),
     (min-resolution:2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tabl.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tab-2x.jpg);
         }
     }
 }
@@ -385,7 +388,7 @@ button {
     (min-resolution:192dpi),
     (min-resolution:2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero2x.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/working-people-bg-2x.jpg);
         }
     }
 }
@@ -412,11 +415,14 @@ button {
         margin-bottom: 36px;
         line-height: 1.07;
     }
+    .hero {
+        padding: 112px 0;
+    }
 }
 
 @media only screen and (min-width: 1158px) {
     .hero {
-        padding: 168px 0;
+        padding: 188px 0;
     }
     .hero-title {
         margin-bottom: 48px;
@@ -863,6 +869,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer);
+    max-width: 264px;
     margin-bottom: 0;
 
 }
@@ -1117,6 +1124,9 @@ button {
 }
 
 @media only screen and (min-width:768px) {
+    .mail-form {
+        max-width: 264px;
+    }
     .e-mail-btn {
         margin-left: 24px;
         margin-top: 0;
@@ -1557,7 +1567,6 @@ button {
     height: 100%;
     top: 0;
     left: 0;
-    width: 428px;
     /* height: 796px; */
     z-index: 2;
     padding: 40px;
@@ -1607,7 +1616,7 @@ button {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     margin-top: 32px;
-    margin-bottom: 284px;
+    margin-bottom: auto;
 }
 
 .mob-nav-item {
